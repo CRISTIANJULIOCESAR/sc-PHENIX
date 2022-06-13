@@ -14,17 +14,15 @@ Citation:
 
 ```
 @article{sc-PHENIX,
-  title={Padron-Manrique Cristian, Vázquez-Jiménez Aarón, Esquivel-Hernandez Diego Armando, Martinez Lopez Yoscelina Estrella, Neri-Rosario Daniel, Sánchez-Castañeda Jean Paul, Giron-Villalobos David,  Resendis-Antonio Osbaldo},
+  author={Padron-Manrique Cristian, Vázquez-Jiménez Aarón, 
+  Esquivel-Hernandez Diego Armando,
+  Martinez Lopez Yoscelina Estrella, Neri-Rosario Daniel, 
+  Sánchez-Castañeda Jean Paul, Giron-Villalobos David,  
+  Resendis-Antonio Osbaldo},
+  
+  
 }
 
-
-
-```
-@article{sc-PHENIX,
-  authors={Padron-Manrique Cristian, Vázquez-Jiménez Aarón, Esquivel-Hernandez Diego Armando, Martinez Lopez Yoscelina Estrella, Neri-Rosario Daniel, Sánchez-Castañeda Jean Paul, Giron-Villalobos David,  Resendis-Antonio Osbaldo},
-}
-
-```
 ```
 ### What is sc-PHENIX
 
