@@ -13,17 +13,14 @@
 Citation: 
 
 ```
-@article{parametricumap,
-  title={Parametric UMAP: learning embeddings with deep neural networks for representation and semi-supervised learning},
-  author={Sainburg, Tim and McInnes, Leland and Gentner, Timothy Q},
+@article{sc-PHENIX,
+  title={Padron-Manrique Cristian, Vázquez-Jiménez Aarón, Esquivel-Hernandez Diego Armando, Martinez Lopez Yoscelina Estrella, Neri-Rosario Daniel, Sánchez-Castañeda Jean Paul, Giron-Villalobos David,  Resendis-Antonio Osbaldo},
 }
 
 ```
-### What is sb-PHENIX
+### What is sc-PHENIX
 
-The supervised based imputation of mb-PHENIX is based on the assumption that data present on high amounts of missing data, that do not let the user find a well-clustered structure on the microbiota data. Another assumption is that microbiota data is high-dimensional and using traditional reductional such as PCA or any Multidimensional scaling variants does not permit finding well patterns. 
-
-Therefore,  mb-PHENIX  is ideal for datasets where similar samples have the same experimental sampling process and sequencing methodology. However, due to technological noise, does not allow finding patterns and much information about the differential expression of taxa.
+Single-cell transcriptomics (scRNA-seq) is becoming a technology that is transforming biological discovery in many fields of medicine. Despite its impact in many areas, scRNASeq is technologically and experimentally limited by the inefficient transcript capture and the high rise of noise sources. For that reason, imputation methods were designed to denoise and recover missing values. Many imputation methods (e.g., neighbor averaging or graph diffusion) rely on k nearest neighbor graph construction derived from a mathematical space as a low-dimensional manifold. Nevertheless, the construction of mathematical spaces could be misleading the representation of densities of the distinct cell phenotypes due to the negative effects of the curse of dimensionality. In this work, we demonstrated that the imputation of data through diffusion approach on PCA space favor over-smoothing when increases the dimension of PCA and the diffusion parameters, such k-NN (k-nearest neighbors) and t (value of the exponentiation of the Markov matrix) parameters. In this case, the  diffusion on PCA space distorts the cell neighborhood captured in the Markovian matrix creating an artifact by connecting densities of distinct cell phenotypes, even though these are not related phenotypically. In this situation, over-smoothing of data is due to the fact of shared information among spurious cell neighbors. Therefore, it can not account for more information on the variability (from principal components) or nearest neighbors for a well construction of a cell-neighborhood. To solve above mentioned issues, we propose a new approach called sc-PHENIX( single cell-PHEnotype recovery by Non-linear Imputation of gene eXpression) which uses PCA-UMAP initialization for revealing new insights into the recovered gene expression that are masked by diffusion on PCA space.
 
 
 ### How to use
