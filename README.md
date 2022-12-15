@@ -12,6 +12,7 @@ The user needs to have knowledge of how to use of pandas and numpy libraries, th
 sc-PHENIX is based mainly of the use of UMAP, more information of how to use UMAP please [click here](https://umap-learn.readthedocs.io/en/latest/index.html). Please keep in mind that we suggest that n_components  (UMAP dimensions) can be set for more than 3 in a non-visual manner to capture better data structure for the diffusion process.  
 
 ###How to use
+
 The input for the funcion mb-PHENIX are objects pandas or numpy object from the abundance matrix and the UMAP output, in the example of the image showed below are count matrix for the abundance matrix, data_umap_vis_super for the UMAP output.
 
 
