@@ -9,7 +9,7 @@
 
 The user needs to have knowledge of how to use of pandas and numpy libraries, this implies that the user has python knowledge. Any free course, cursera or udeamy course can be used to learn faster this python libraries, for recent users please go in here  [click here](https://www.udemy.com/share/101WaU3@3A6uj9QXHRFfZxf59mg8aLG7J1eXrfzT5RKo5SO1VRl9RxsqCEINIxSf67WH3GsG/) to learn the basics.
 
-sc-PHENIX is based mainly of the use of UMAP, more information of how to use UMAP please refer in here [click here](https://umap-learn.readthedocs.io/en/latest/index.html). 
+sc-PHENIX is based mainly of the use of UMAP, more information of how to use UMAP please [click here](https://umap-learn.readthedocs.io/en/latest/index.html). 
 
 ###How to use
 The input for the funcion mb-PHENIX are objects pandas or numpy object from the abundance matrix and the UMAP output, in the example of the image showed below are count matrix for the abundance matrix, data_umap_vis_super for the UMAP output.
