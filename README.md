@@ -9,7 +9,7 @@
 
 The user needs to have knowledge of how to use of pandas and numpy libraries, this implies that the user has python knowledge. Any free course, cursera or udeamy course can be used to learn faster this python libraries, for recent users please go in here  [click here](https://www.udemy.com/share/101WaU3@3A6uj9QXHRFfZxf59mg8aLG7J1eXrfzT5RKo5SO1VRl9RxsqCEINIxSf67WH3GsG/) to learn the basics.
 
-mC-PHENIX is based mainly of the use of UMAP, so the abundance matrix need to be transformed into a lower dimensional space using UMAP if data has no cluster strucutre please use UMAP in supervised manner(needs label information controls and cases for example in integers), more information in here [click here](https://umap-learn.readthedocs.io/en/latest/supervised.html). 
+sc-PHENIX is based mainly of the use of UMAP, so the abundance matrix need to be transformed into a lower dimensional space using UMAP if data has no cluster strucutre please use UMAP in supervised manner(needs label information controls and cases for example in integers), more information in here [click here](https://umap-learn.readthedocs.io/en/latest/supervised.html). 
 
 
 
