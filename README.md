@@ -2,9 +2,18 @@
 # sc-PHENIX Imputation  (2022; Code for paper)
 
 
-[![Open Example In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lpdCy7HkC5TRI9LfUtIHBBW8oRO86Nvi?usp=sharing)
+What is sc-PHENIX
+The supervised based imputation of mb-PHENIX is based on the assumption that data present on high amounts of missing data, that do not let the user find a well-clustered structure on the microbiota data. Another assumption is that microbiota data is high-dimensional and using traditional reductional such as PCA or any Multidimensional scaling variants does not permit finding well patterns.
 
+Therefore, mb-PHENIX is ideal for datasets where similar samples have the same experimental sampling process and sequencing methodology. However, due to technological noise, does not allow finding patterns and much information about the differential expression of taxa.
 
+What you need to know first
+The user needs to have knowledge of how to use of pandas and numpy libraries, this implies that the user has python knowledge. Any free course, cursera or udeamy course can be used to learn faster this python libraries, for recent users please go in here click here to learn the basics.
+
+mb-PHENIX is based mainly of the use of UMAP, so the abundance matrix need to be transformed into a lower dimensional space using UMAP if data has no cluster strucutre please use UMAP in supervised manner(needs label information controls and cases for example in integers), more information in here click here.
+
+How to use
+The input for the funcion mb-PHENIX are objects pandas or numpy object from the abundance matrix and the UMAP output, in the example of the image showed below are count matrix for the abundance matrix, data_umap_vis_super for the UMAP output.
 ==============================
 
 !![myimage-alt-tag](https://github.com/resendislab/sc-PHENIX/blob/main/Screen%20Shot%202022-06-13%20at%2015.03.13.png)
