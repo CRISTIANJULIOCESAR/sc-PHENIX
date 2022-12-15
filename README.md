@@ -2,15 +2,10 @@
 # sc-PHENIX Imputation  (2022; Code for paper)
 
 
-What is sc-PHENIX
-The supervised based imputation of mb-PHENIX is based on the assumption that data present on high amounts of missing data, that do not let the user find a well-clustered structure on the microbiota data. Another assumption is that microbiota data is high-dimensional and using traditional reductional such as PCA or any Multidimensional scaling variants does not permit finding well patterns.
+## What is sc-PHENIX
 
-Therefore, mb-PHENIX is ideal for datasets where similar samples have the same experimental sampling process and sequencing methodology. However, due to technological noise, does not allow finding patterns and much information about the differential expression of taxa.
+ scPHENIX was developed to improve imputation of scRNA-seq data avoiding over-smoothing ; it falls into the category of smooth-based imputation based on benchmarking. However, the methods used in sc-PHENIX to obtain the low dimensional manifold is UMAP, and the Mt (exponentiated Markov matrix) is from diffusion maps, both techniques based on manifold learning being part of the nonlinear dimensionality reduction methods category, a subfield of machine learning. In this work, our approach is an improvement to the popular method MAGIC by integrating UMAP in the imputation process. Consequently, there is an improvement in the computation of Mt (exponentiated markov matrix) reflecting the denoised cell-neighborhood that captures local, continuum and global data structures. The advantage of  preserving data structures with sc-PHENIX compared to MAGIC is that we can share gene expression among more accurate nearest neighbors cells on the manifold of Mt sc-PHENIX. Following these procedures, we obtain more biological insights and at the same time mitigate the risk of over-smoothing data among spurious distinct cell phenotypes.
 
-What you need to know first
-The user needs to have knowledge of how to use of pandas and numpy libraries, this implies that the user has python knowledge. Any free course, cursera or udeamy course can be used to learn faster this python libraries, for recent users please go in here click here to learn the basics.
-
-mb-PHENIX is based mainly of the use of UMAP, so the abundance matrix need to be transformed into a lower dimensional space using UMAP if data has no cluster strucutre please use UMAP in supervised manner(needs label information controls and cases for example in integers), more information in here click here.
 
 How to use
 The input for the funcion mb-PHENIX are objects pandas or numpy object from the abundance matrix and the UMAP output, in the example of the image showed below are count matrix for the abundance matrix, data_umap_vis_super for the UMAP output.
