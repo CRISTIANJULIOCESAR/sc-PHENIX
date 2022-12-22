@@ -11,7 +11,46 @@ The user needs to have knowledge of how to use of pandas and numpy libraries, th
 
 sc-PHENIX is based mainly of the use of UMAP, more information of how to use UMAP please [click here](https://umap-learn.readthedocs.io/en/latest/index.html). Please keep in mind that we suggest that n_components  (UMAP dimensions) can be set for more than 3 in a non-visual manner to capture better data structure for the diffusion process.  
 
-### How to use
+The important parameters for mb-PHENIX function are:
+
+`knn` and `decay`: For the adaptive kernel to construct the Markovian matrix, the user chooses a knn value that is the number of nearest neighbors from which to compute kernel bandwidth. The parameter decay is the decay rate of kernel tails. By default, the decaying kernel is set to 1, we recommend default setting for decay. For small datasets we recommend a set knn value sufficient to avoid over-smoothing to other clusters but not too small to alter the connectivity of data as a graph.
+
+`t` : For the diffusion process, the parameter t (diffusion time) is the power
+value to which the Markovian matrix is powered. This sets the level of
+diffusion.
+
+The `knn` and `t` values need to be sufficient to build a complete graph (considering the class) and less to avoid over-smooth taxa to other distinct classes.
+
+
+plase make sure if you want to use on colab download and install umap 
+
+
+## 1) install umap
+put this in a colab cell and run it to pip install UMAP! from [click here](https://umap-learn.readthedocs.io/en/latest/supervised.html). 
+```python
+!pip install umap-learn
+```
+## 2) import libraries
+then in other cell import the libraries to connect our github to the colab and pandas and visualization (use the visualization that you want)
+```python
+import requests
+import os
+import urllib.request
+import pandas as pd
+import numpy as np
+import seaborn as sns
+```
+## 3) download mb-PHENIX python script 
+
+in other cell download mb-phenix
+```python
+url_mbphenix = 'https://raw.githubusercontent.com/resendislab/mb-PHENIX/main/CODE/mb-phenix%20code/mb_PHENIX.py'
+```
+## 4) import mb-PHENIX
+then in other cell import mb-phenix 
+```python
+from mb_PHENIX import mbPHENIX
+```
 
 
 
