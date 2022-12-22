@@ -11,7 +11,7 @@ The user needs to have knowledge of how to use of pandas and numpy libraries, th
 
 sc-PHENIX is based mainly of the use of UMAP, more information of how to use UMAP please [click here](https://umap-learn.readthedocs.io/en/latest/index.html). Please keep in mind that we suggest that n_components  (UMAP dimensions) can be set for more than 3 in a non-visual manner to capture better data structure for the diffusion process.  
 
-The important parameters for mb-PHENIX function are:
+The important parameters for sc-PHENIX function are:
 
 `knn` and `decay`: For the adaptive kernel to construct the Markovian matrix, the user chooses a knn value that is the number of nearest neighbors from which to compute kernel bandwidth. The parameter decay is the decay rate of kernel tails. By default, the decaying kernel is set to 1, we recommend default setting for decay. For small datasets we recommend a set knn value sufficient to avoid over-smoothing to other clusters but not too small to alter the connectivity of data as a graph.
 
@@ -44,15 +44,16 @@ import seaborn as sns
 
 in other cell download mb-phenix
 ```python
-url_mbphenix = 'https://raw.githubusercontent.com/resendislab/mb-PHENIX/main/CODE/mb-phenix%20code/mb_PHENIX.py'
+url_sc_phenix = 'https://raw.githubusercontent.com/resendislab/sc-PHENIX/main/sc-PHENIX%20tutorial%20colab/sc_PHENIX.py'
+urllib.request.urlretrieve(url_sc_phenix, 'sc_PHENIX.py')
+os.listdir()
+!cd /content
+!ls
 ```
-## 4) import mb-PHENIX
+## 4) import sc-PHENIX
 then in other cell import mb-phenix 
 ```python
 from mb_PHENIX import mbPHENIX
 ```
-
-
-
 
 sc-PHENIX is available in colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/resendislab/sc-PHENIX/blob/main/sc-PHENIX%20tutorial%20colab/sc_PHENIX_try_me_example.ipynb)
