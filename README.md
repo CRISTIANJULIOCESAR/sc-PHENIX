@@ -13,7 +13,7 @@ sc-PHENIX is based mainly of the use of UMAP, more information of how to use UMA
 
 The important parameters for sc-PHENIX function are:
 
-`knn` and `decay`: For the adaptive kernel to construct the Markovian matrix, the user chooses a `knn` value that is the number of nearest neighbors from which to compute kernel bandwidth. The parameter `decay` is the decay rate of kernel tails. By default, the decaying kernel is set to 1, we recommend default setting for decay. For small datasets we recommend a set knn value sufficient to avoid over-smoothing to other clusters but not too small to alter the connectivity of data as a graph.
+`knn` and `decay`: For the adaptive kernel to construct the Markovian matrix, the user chooses a `knn` value that is the number of nearest neighbors from which to compute kernel bandwidth. The parameter `decay` is the decay rate of kernel tails. For small datasets we recommend a set knn value sufficient to avoid over-smoothing to other clusters but not too small to alter the connectivity of data as a graph.
 
 `t` : For the diffusion process, the parameter t (diffusion time) is the power
 value to which the Markovian matrix is powered. This sets the level of
@@ -50,10 +50,20 @@ os.listdir()
 !cd /content
 !ls
 ```
-## 4) import sc-PHENIX
+## 4) import sc-PHENIX and reduces dimensionality with PCA 
 then in other cell import mb-phenix 
 ```python
-from mb_PHENIX import mbPHENIX
+from sc_PHENIX import run_pca, sc_PHENIX
+pca_data= run_pca(data,n_components=500, random_state=1)
 ```
+
+## 5) import umap and reduce de PCA space into a UMAP space
+
+import umap
+#umap parameters we reduced the 500 PCA dimensions to 50 umap dimensions
+fit = umap.UMAP(n_components=50,n_neighbors=10,verbose= True,metric='cosine',random_state=42)
+%time u_no_3 = fit.fit_transform(pca_data) #u_no_3 variable is the 50 umap dimenions coordinates for sc-PHENIX
+#the default output from UMAP is a euclidean interpretable space, but can be changed.
+
 
 sc-PHENIX is available in colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/resendislab/sc-PHENIX/blob/main/sc-PHENIX%20tutorial%20colab/sc_PHENIX_try_me_example.ipynb)
