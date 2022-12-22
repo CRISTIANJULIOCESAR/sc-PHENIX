@@ -58,12 +58,13 @@ pca_data= run_pca(data,n_components=500, random_state=1)
 ```
 
 ## 5) import umap and reduce de PCA space into a UMAP space
+```python
 
 import umap
 #umap parameters we reduced the 500 PCA dimensions to 50 umap dimensions
 fit = umap.UMAP(n_components=50,n_neighbors=10,verbose= True,metric='cosine',random_state=42)
 %time u_no_3 = fit.fit_transform(pca_data) #u_no_3 variable is the 50 umap dimenions coordinates for sc-PHENIX
 #the default output from UMAP is a euclidean interpretable space, but can be changed.
-
+```
 
 sc-PHENIX is available in colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/resendislab/sc-PHENIX/blob/main/sc-PHENIX%20tutorial%20colab/sc_PHENIX_try_me_example.ipynb)
