@@ -57,7 +57,7 @@ from sc_PHENIX import run_pca, sc_PHENIX
 pca_data= run_pca(data,n_components=500, random_state=1)
 ```
 
-## 5) import umap and reduce de PCA space into a UMAP space
+## 5) import umap and reduce PCA space into a UMAP space
 ```python
 
 import umap
