@@ -68,6 +68,10 @@ fit = umap.UMAP(n_components=50,n_neighbors=10,verbose= True,metric='cosine',ran
 ```
 
 ## 6) impute with sc-PHENIX
+```python
+neuro_phenix = sc_PHENIX(data, u_no_3,t=15,metric='euclidean',knn=15,decay=500)
+neuro_phenix
+```
 
 
 sc-PHENIX is available in colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/resendislab/sc-PHENIX/blob/main/sc-PHENIX%20tutorial%20colab/sc_PHENIX_try_me_example.ipynb)
