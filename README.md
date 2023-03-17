@@ -1,4 +1,4 @@
-# sc-PHENIX Imputation  (2022; Code for paper)
+# sc-PHENIX Imputation 
 
 
 ### What is sc-PHENIX
