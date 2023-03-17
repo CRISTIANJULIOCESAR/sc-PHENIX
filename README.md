@@ -40,9 +40,9 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 ```
-## 3) download mb-PHENIX python script 
+## 3) download sc-PHENIX python script 
 
-in other cell download mb-phenix
+in other cell download sc-phenix
 ```python
 url_sc_phenix = 'https://raw.githubusercontent.com/resendislab/sc-PHENIX/main/sc-PHENIX%20tutorial%20colab/sc_PHENIX.py'
 urllib.request.urlretrieve(url_sc_phenix, 'sc_PHENIX.py')
