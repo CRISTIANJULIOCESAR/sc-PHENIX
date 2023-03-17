@@ -51,7 +51,7 @@ os.listdir()
 !ls
 ```
 ## 4) import sc-PHENIX and reduces dimensionality with PCA 
-then in other cell import mb-phenix 
+then in other cell import sc-phenix 
 ```python
 from sc_PHENIX import run_pca, sc_PHENIX
 pca_data= run_pca(data,n_components=500, random_state=1)
