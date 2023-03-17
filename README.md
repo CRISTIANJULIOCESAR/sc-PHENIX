@@ -13,7 +13,7 @@ sc-PHENIX is based mainly of the use of UMAP, more information of how to use UMA
 
 The important parameters for sc-PHENIX function are:
 
-`knn` and `decay`: For the adaptive kernel to construct the Markovian matrix, the user chooses a `knn` value that is the number of nearest neighbors from which to compute kernel bandwidth. The parameter `decay` is the decay rate of kernel tails. For small datasets we recommend a set knn value sufficient to avoid over-smoothing to other clusters but not too small to alter the connectivity of data as a graph.
+`knn` and `decay`: For the adaptive kernel to construct the Markovian matrix, the user chooses a `knn` value that is the number of nearest neighbors from which to compute kernel bandwidth. The parameter `decay` is the decay rate of kernel tails. We recommend a set knn value sufficient to avoid over-smoothing to other clusters but not too small to alter the connectivity of data as a graph.
 
 `t` : For the diffusion process, the parameter t (diffusion time) is the power
 value to which the Markovian matrix is powered. This sets the level of
