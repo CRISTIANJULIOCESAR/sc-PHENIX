@@ -20,7 +20,7 @@ The important parameters for sc-PHENIX function are:
 value to which the Markovian matrix is powered. This sets the level of
 diffusion.
 
-The `knn` and `t` values need to be sufficient to build a complete graph (considering the class) and less to avoid over-smooth taxa to other distinct classes.
+The `knn` and `t` values need to be sufficient to build a complete graph (considering the class) and less to avoid over-smooth gene exression to other distinct phenotypes.
 
 
 plase make sure if you want to use on colab download and install umap 
